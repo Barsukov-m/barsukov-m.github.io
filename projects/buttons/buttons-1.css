@@ -1,0 +1,50 @@
+@font-face {
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: url(bg-1.png);
+}
+
+section {
+	margin: 50px;
+	text-align: center;
+}
+
+.button {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	margin: 25px;
+	background: url(bg-1.png);
+	cursor: pointer;
+
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+
+	box-shadow: 0 3px 15px rgba(0,0,0,.25), inset 0 3px 6px rgba(255,255,255,.8), inset 0 -3px 3px rgba(0,0,0,.2), inset 0 0 20px rgba(0,0,0,.1);
+	-moz-box-shadow: 0 3px 15px rgba(0,0,0,.25), inset 0 3px 6px rgba(255,255,255,.8), inset 0 -3px 3px rgba(0,0,0,.2), inset 0 0 20px rgba(0,0,0,.1);
+	-webkit-box-shadow: 0 3px 15px rgba(0,0,0,.25), inset 0 3px 6px rgba(255,255,255,.8), inset 0 -3px 3px rgba(0,0,0,.2), inset 0 0 20px rgba(0,0,0,.1);
+}
+
+.button:hover {
+	box-shadow: inset 0 3px 20px rgba(0,0,0,.2), 0 3px 20px rgba(255,255,255,.6), inset 0 -5px 5px rgb(255,255,255,.8), inset 0 2px 3px rgba(0,0,0,.1);
+	background-position: center 52%; 
+}
+
+.btn-photos {
+	background: url(http://www.defaulticon.com/images/icons32x32/MD-camera-photo_0.png?itok=kr5dLwub) center no-repeat;
+	opacity: .7;
+}
+
+.btn-settings {
+	background: url(http://www.defaulticon.com/images/icons32x32/settings.png?itok=f3WwNrKf) center no-repeat;
+	opacity: .7;
+}
+
+.btn-music {
+	background: url(http://www.defaulticon.com/images/icons32x32/MD-music.png?itok=vMpGo-V9) center no-repeat;
+	opacity: .7;
+}
