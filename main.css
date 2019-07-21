@@ -274,7 +274,7 @@ footer p {
 .langs a:hover {text-decoration:underline dotted}
 
 .langs a::before {
-	background:url(/_sources/flags.svg);
+	background:url(/sources/flags.svg);
 	background-size:45px;
 	content:'';
 	display:inline-block;
