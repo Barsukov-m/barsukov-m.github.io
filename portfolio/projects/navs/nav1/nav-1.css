@@ -1,0 +1,115 @@
+@font-face {
+	font-family:'Open Sans', sans-serif;
+}
+
+body {
+	background:url(bg.png);
+	font-family:'Open Sans', sans-serif;
+	margin:1px;
+	text-transform:uppercase;
+}
+
+h1 {
+	background:#ccc;
+	color:#fff;
+	left:200px;
+	line-height:50px;
+	margin:1px;
+	opacity:.7;
+	padding:0 20px;
+	position:fixed;
+	transition:opacity .3s ease-in-out;
+	-webkit-transition:opacity .3s ease-in-out;
+	-moz-transition:opacity .3s ease-in-out;
+	-o-transition:opacity .3s ease-in-out;
+}
+
+h1:hover {
+	background:#03afeb;
+	opacity:1;
+}
+
+.nav {
+	list-style:none;
+	margin:0px;
+	opacity:.7;
+	padding:0;
+	width:50px;
+	transition:opacity .3s ease-in-out;
+	-webkit-transition:opacity .3s ease-in-out;
+	-moz-transition:opacity .3s ease-in-out;
+	-o-transition:opacity .3s ease-in-out;
+}
+
+.nav:hover {
+	opacity:1;
+}
+
+.nav li {
+	height:50px;
+	overflow:hidden;
+	width:50px;
+	transition:width .2s ease-in-out, height .2s ease-in-out .2s;
+	-webkit-transition:width .2s ease-in-out, height .2s ease-in-out .2s;
+	-moz-transition:width .2s ease-in-out, height .2s ease-in-out .2s;
+	-o-transition:width .2s ease-in-out, height .2s ease-in-out .2s;
+}
+
+.nav li:hover {
+	height:174px;
+	width:200px;
+}
+
+.nav li a {
+	background:#ccc;
+	color:#fff;
+	cursor:pointer;
+	display:block;
+	line-height:40px;
+	margin:1px;
+	padding-left:15px;
+	width:200px;
+
+	transition:background .2s ease-in-out;
+	-webkit-transition:background .2s ease-in-out;
+	-moz-transition:background .2s ease-in-out;
+	-o-transition:background .2s ease-in-out;
+}
+
+.nav li a:hover {
+	background:#03afeb;
+}
+
+.nav li a:first-child {
+	font-size:1.1em;
+	line-height:50px;
+	position:relative;
+	text-indent:36px;
+}
+
+.nav li a:first-child::before {
+	content:'';
+	display:block;
+	filter:invert(1);
+	height:32px;
+	left:9px;
+	position:absolute;
+	top:9px;
+	width:32px;
+}
+
+.main-menu a:first-child::before {
+	background:url(home.png) center no-repeat;
+}
+
+.settings a:first-child::before {
+	background:url(settings.png) center no-repeat;
+}
+
+.links a:first-child::before {
+	background:url(link.png) center no-repeat;
+}
+
+.search a:first-child::before {
+	background:url(search.png) center no-repeat;
+}
