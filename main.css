@@ -163,8 +163,6 @@ nav a {
 /********* TEXT *********/
 
 article {
-	clear:both;
-	display:table;
 	margin:100px auto 0;
 	min-height:100%; /* Makes footer sticky */
 	width:1000px;
