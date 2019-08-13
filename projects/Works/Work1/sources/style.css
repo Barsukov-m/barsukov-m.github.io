@@ -1,0 +1,281 @@
+a {
+    color:#111;
+    text-decoration:none;
+}
+
+ul, h1, h2, h3 {margin:0}
+
+/* ********* RESET END ********* */
+
+body {
+    background-color:#dbe2ec;
+    color:#111;
+    margin:0;
+}
+
+#main-container {
+    margin:100px auto;
+    width:1325px;
+}
+
+section {
+    display:inline-block;
+    width:370px;
+
+    box-shadow:0 10px 50px rgba(0,0,0,.3);
+    -webkit-box-shadow:0 10px 50px rgba(0,0,0,.3);
+
+    transition:transform .3s, box-shadow .3s, -webkit-box-shadow .3s;
+    -webkit-transition:transform .3s, box-shadow .3s, -webkit-box-shadow .3s;
+    -moz-transition:transform .3s, box-shadow .3s, -webkit-box-shadow .3s;
+    -o-transition:transform .3s, box-shadow .3s, -webkit-box-shadow .3s;
+}
+
+section:hover {
+    box-shadow:0 10px 50px rgba(0,0,0,.6);
+    transform:scale(1.05);
+
+    transition:transform .6s, box-shadow .6s .05s, -webkit-box-shadow .6s .05s;
+    -webkit-transition:transform .6s, box-shadow .6s .05s, -webkit-box-shadow .6s .05s;
+    -moz-transition:transform .6s, box-shadow .6s .05s, -webkit-box-shadow .6s .05s;
+    -o-transition:transform .6s, box-shadow .6s .05s, -webkit-box-shadow .6s .05s;
+}
+
+section>main {
+    background:#f7f8f9;
+    box-sizing:border-box;
+    height:608px;
+    overflow:hidden;
+    width:370px;
+}
+
+#first-example main {
+    background:url('background.png') no-repeat;
+    background-color:#e9ecf1;
+    background-position:-440px -100px;
+    background-size:1100px;
+    padding-left:2em;
+}
+
+h1 {
+    color:#fff;
+    font-family:'Brandon Grotesque', sans-serif;
+    font-size:2.4em;
+    font-weight:800;
+    line-height:1.3em;
+    padding-top:260px;
+    position:relative;
+    text-shadow:0 10px 50px #000;
+    width:60%;
+}
+
+h1::before {
+    content:'Mark Manson';
+    display:block;
+    font-size:.3em;
+    font-weight:500;
+    letter-spacing:2px;
+    position:absolute;
+    top:225px;
+}
+
+#travel-btn {
+    background:#fff;
+    border:none;
+    font-family:'Open Sans';
+    font-weight:600;
+    height:30px;
+    margin:25px 0;
+    width:80px;
+}
+
+#travel-btn:hover {
+    background:#eee;
+    box-shadow:0 0 1px #eee;
+}
+
+/* ********* FOOTER ********* */
+
+footer {
+    background:#fff;
+    height:55px;
+    overflow:hidden;
+    position:relative;
+    width:370px;
+}
+
+#close {
+    color:#111;
+    display:inline-block;
+    font-family:'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight:600;
+    line-height:30px;
+    margin:12.5px 17px;
+    overflow:hidden;
+    text-align:center;
+    text-decoration:none;
+    width:80px;
+}
+
+#footer-menu {
+    display:inline-block;
+    list-style:none;
+    margin:0 auto;
+    width:90px;
+}
+
+#footer-menu li {
+    display:inline-block;
+    font-family:'Open Sans';
+    font-weight:900;
+    line-height:55px;
+    overflow:hidden;
+    padding:0 2px;
+}
+
+#footer-menu li:not(:first-child) {opacity:.3}
+
+#comments-icon {
+    float:right;
+    line-height:55px; 
+    margin:0 32px;
+}
+
+h1, button, footer a, #caption, #comments-count
+{text-transform:uppercase}
+
+/* ********* SECOND EXAMPLE ********* */
+
+#second-example {margin:0 100px}
+
+.info-paragraph {
+    color:#2c3137;
+    font-family:'Slabo';
+    font-size:15px;
+    line-height:32px;
+    margin:0;
+    margin:40px 30px;
+}
+
+.info-paragraph:nth-child(1)::first-letter {
+    float:left;
+    font-size:6.5em;
+    line-height:75px;
+    padding:10px 15px 10px 0;
+}
+
+#third-example main {background:#fff}
+
+#third-example header {
+    background:#fff;
+    counter-reset:comments;
+    /* Counter has created */
+    height:55px;
+    position:relative;
+}
+
+#comments-count {
+    font-family:'Open Sans';
+    font-size:14px;
+    font-weight:600;
+    line-height:70px;
+    overflow:hidden;
+    text-align:center;
+}
+
+#comments-count::after {
+    content:' (' counter(comments) ')';
+    counter-increment:comments 45;
+    /* Adds 45 to the comments counter */
+}
+
+#comments-count+a {
+    line-height:70px;
+    position:absolute;
+    right:32px;
+    top:0;
+} /* Close button */
+
+/* ********* COMMENTS SECTION ********* */
+
+.comment-body {
+    font-family:'Slabo';
+    margin:30px 0;
+    padding-left:90px;
+    width:250px;
+}
+
+.profile-photo {
+    background:url("1.jpg") 0 -10px;
+    background-size:60px;
+    border-radius:50%;
+    float:left;
+    height:50px;
+    margin:0 20px;
+    width:50px;
+}
+
+.second-person {
+    background:url("2.jpg") -23px -8px;
+    background-size:90px;
+}
+
+.third-person {
+    background:url("3.jpg") -20px -2px;
+    background-size:90px;
+}
+
+.fourth-person {
+    background:url("4.jpg") -5px -15px;
+    background-size:60px;
+}
+
+.comment-body h3, .comment-time {
+    display:inline-block;
+    font-size:12px;
+}
+
+.comment-time {color:#888}
+
+.comment-time::before {
+    content:'•';
+    padding:0 8px;
+}
+
+.comment-body p {
+    color:#555;
+    font-size:13px;
+    line-height:23px;
+}
+
+/* ********* The original authon ********* */
+
+#links-to-author {
+    background:none;
+    width:180px;
+    text-align:center;
+    margin:0 auto;
+}
+
+#links-to-author a {
+    display:block;
+    font-family:'Open Sans';
+    color:#b1b9c4;
+    width:180px;
+}
+
+/* ********* MEDIA QUERIES ********* */
+
+@media only screen and (max-width:1325px) {
+
+    #main-container {width:850px}
+
+    #second-example {margin-right:0}
+
+    #third-example {margin:70px 240px}
+
+}
+
+*::selection {background:#ccc}
+/* Text selection */
