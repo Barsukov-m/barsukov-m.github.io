@@ -1,0 +1,34 @@
+/* ****** Roboto Font Family ****** */
+
+@font-face {
+    font-family: 'Roboto';
+    src: 'Roboto-Thin.ttf';
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: 'Roboto-Light.ttf';
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: 'Roboto-LightItalic.ttf';
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: 'Roboto-Regular.ttf';
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: 'Roboto-Bold.ttf';
+    font-weight: 700;
+}
+
+/* ****** xxx Font Family ****** */
