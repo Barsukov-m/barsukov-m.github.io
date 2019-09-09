@@ -31,4 +31,30 @@
     font-weight: 700;
 }
 
-/* ****** xxx Font Family ****** */
+/* ****** PT Font Family ****** */
+
+@font-face {
+    font-family: 'PT Sans';
+    src: 'PTSans-Regular.ttf';
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: 'PTSans-RegularItalic.ttf';
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: 'PTSans-Bold.ttf';
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: 'PTSans-BoldItalic.ttf';
+    font-weight: 700;
+    font-style: italic;
+}
