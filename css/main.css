@@ -1,9 +1,9 @@
-/* Thank you for the visiting my page
-   I'm just a learner, so if you have
-   found some errors in my code, please
-   tell me on the E-Mail or Telegram. */
+/*  Thanks for visiting my page.
+	If you have found any bugs
+   	in the code, please notify me
+    by email or GitHub. */
 
-html, body {height:100%} /* Makes footer sticky */
+html, body {height:100%} /* Sticky footer */
 
 body {
 	color:#aaa;
@@ -106,19 +106,19 @@ nav a {
 /* Little better links alignment */
 
 .dropdown li {height:20px;width:80px}
-/* Fixed size for the dropdown elements */
+/* Fixed size of the dropdown elements */
 
 .dropdown li:first-child {border-right:1px solid #aaa}
 /* Links separator in 'links' dropdown */
 
 .nav-elements>li:nth-child(3) {border-right:1px solid #aaa}
-/* Right border for the third element of the list */
+/* Right border of the third element of the list */
 
 /********* TOOLTIP *********/
 
 .tooltip {position:relative}
 
-#tooltip-content {
+.tooltip-content {
 	background:#000;
 	border-radius:5px;
 	color:#eee;
@@ -140,7 +140,7 @@ nav a {
 			transition:all .2s;
 }
 
-#tooltip-content::before {
+.tooltip-content::before {
 	border-bottom:5px solid #000;
 	border-left:5px solid transparent;
 	border-right:5px solid transparent;
@@ -152,7 +152,7 @@ nav a {
 	transform:translate(-50%);
 } /* Little tooltip's triangle */
 
-.tooltip:hover #tooltip-content {
+.tooltip:hover .tooltip-content {
 	opacity:.7;
 	top:30px;
 	visibility:visible;
@@ -171,7 +171,7 @@ article {
 	width:1000px;
 }
 
-#blue-selector {color:#7DD9FF}
+.highlight {color:#7DD9FF}
 /* Little flag after 'Ukraine' word on hover */
 
 .text {display:inline-block;width:580px}
@@ -208,7 +208,8 @@ hr {border:1px solid #aaa;margin:30px 0 15px}
 	font-size:1.3em;
 	font-style:italic;
 	font-weight:300;
-	margin:0;
+	line-height:1.2em;
+	margin:0 0 .3em 0;
 	text-align:justify;
 }
 
@@ -222,14 +223,6 @@ hr {border:1px solid #aaa;margin:30px 0 15px}
 #main-image {
 	height:300px;
 	width:300px;
-}
-
-#image-section::after {
-	content:'Me in B&W (500x500px)';
-	height:20px;
-	width: 300px;
-	text-align:right;
-	display: block;
 }
 
 /********* FOOTER *********/
@@ -266,12 +259,12 @@ footer p {
 	text-decoration:none;
 }
 
-.langs a:hover {text-decoration:underline dotted}
+.langs a:hover {color:#888}
 
 .langs a::before {
-	background:url('/sources/flags.svg');
+	background:url('/images/langs.svg');
 	background-size:45px;
-	background-position:0; /* Correctly display on IE */
+	background-position:0; /* IE */
 	content:'';
 	display:inline-block;
 	height:15px;
@@ -280,9 +273,9 @@ footer p {
 	width:15px;
 }
 
-.langs #ua {padding:5px 0}
-.langs #ua::before {background-position:30px}
-.langs #ru::before {background-position:15px}
+#ua {padding:5px 0}
+#ua::before {background-position:30px}
+#ru::before {background-position:15px}
 
 /********* OTHER *********/
 
