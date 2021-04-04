@@ -22,7 +22,7 @@ Table of Contents:
     --page-grey: #EEE;
 }
 
-.text--white {
+.text-white {
     color: #fff;
 }
 
@@ -260,16 +260,12 @@ body {
 /* ========= ANIMATION ========= */
 
 @keyframes waving {
-    0% {
+    0%, 100% {
         transform: none;
     }
 
     50% {
         transform: translate(5px, -2px) rotate(20deg);
-    }
-
-    100% {
-        transform: none;
     }
 }
 
@@ -289,21 +285,15 @@ body {
         max-width: 1200px;
     }
 
-    .main {
-        padding-bottom: 50px;
-        height: 100%;
-    }
-
     .content-wrapper {
         float: left;
         max-width: 950px;
     }
 
     .side-profile {
-        display: inline-block;
+        float: right;
         padding: 0 30px;
         width: 30%;
-        float: right;
     }
 
     .side-profile h2 {
@@ -314,24 +304,21 @@ body {
         margin: 0;
     }
 
-    .content {
-        background: #FFF;
+    .content, .footer {
+        background: none;
     }
 
     .footer {
-        margin-top: -205px;
-        height: 100px;
-        width: 100%;
-    }
-
-    .footer-wrapper {
-        max-width: 1200px;
+        height: 160px;
+        padding: 30px;
     }
 
     .footer__langs  {
+        border-radius: 30px;
         float: left;
+        margin-right: 20%;
         padding: 15px 0;
-        width: 70%;
+        width: 50%;
     }
 
     .footer__copy {
