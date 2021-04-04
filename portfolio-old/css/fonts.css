@@ -1,0 +1,60 @@
+/* ****** Roboto Font Family ****** */
+
+@font-face {
+    font-family: 'Roboto';
+    src: 'Roboto-Thin.ttf';
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: 'Roboto-Light.ttf';
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: 'Roboto-LightItalic.ttf';
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: 'Roboto-Regular.ttf';
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: 'Roboto-Bold.ttf';
+    font-weight: 700;
+}
+
+/* ****** PT Font Family ****** */
+
+@font-face {
+    font-family: 'PT Sans';
+    src: 'PTSans-Regular.ttf';
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: 'PTSans-RegularItalic.ttf';
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: 'PTSans-Bold.ttf';
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: 'PTSans-BoldItalic.ttf';
+    font-weight: 700;
+    font-style: italic;
+}

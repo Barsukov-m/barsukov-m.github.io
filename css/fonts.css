@@ -1,60 +1,47 @@
-/* ****** Roboto Font Family ****** */
-
 @font-face {
-    font-family: 'Roboto';
-    src: 'Roboto-Thin.ttf';
-    font-weight: 100;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: 'Roboto-Light.ttf';
-    font-weight: 300;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: 'Roboto-LightItalic.ttf';
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: 'Roboto-Regular.ttf';
+    font-family: 'Roboto Mono';
+    src: url('/fonts/RobotoMono-Regular.eot');
+    src: url('/fonts/RobotoMono-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/RobotoMono-Regular.woff2') format('woff2'),
+        url('/fonts/RobotoMono-Regular.woff') format('woff'),
+        url('/fonts/RobotoMono-Regular.ttf') format('truetype'),
+        url('/fonts/RobotoMono-Regular.svg#RobotoMono-Regular') format('svg');
     font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: 'Roboto-Bold.ttf';
-    font-weight: 700;
-}
-
-/* ****** PT Font Family ****** */
-
-@font-face {
-    font-family: 'PT Sans';
-    src: 'PTSans-Regular.ttf';
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: 'PT Sans';
-    src: 'PTSans-RegularItalic.ttf';
+    font-family: 'Roboto Mono';
+    src: url('/fonts/RobotoMono-Italic.eot');
+    src: url('/fonts/RobotoMono-Italic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/RobotoMono-Italic.woff2') format('woff2'),
+        url('/fonts/RobotoMono-Italic.woff') format('woff'),
+        url('/fonts/RobotoMono-Italic.ttf') format('truetype'),
+        url('/fonts/RobotoMono-Italic.svg#RobotoMono-Italic') format('svg');
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'PT Sans';
-    src: 'PTSans-Bold.ttf';
-    font-weight: 700;
+    font-family: 'Roboto Mono';
+    src: url('/fonts/RobotoMono-Medium.eot');
+    src: url('/fonts/RobotoMono-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/RobotoMono-Medium.woff2') format('woff2'),
+        url('/fonts/RobotoMono-Medium.woff') format('woff'),
+        url('/fonts/RobotoMono-Medium.ttf') format('truetype'),
+        url('/fonts/RobotoMono-Medium.svg#RobotoMono-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'PT Sans';
-    src: 'PTSans-BoldItalic.ttf';
-    font-weight: 700;
+    font-family: 'Roboto Mono';
+    src: url('/fonts/RobotoMono-MediumItalic.eot');
+    src: url('/fonts/RobotoMono-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/RobotoMono-MediumItalic.woff2') format('woff2'),
+        url('/fonts/RobotoMono-MediumItalic.woff') format('woff'),
+        url('/fonts/RobotoMono-MediumItalic.ttf') format('truetype'),
+        url('/fonts/RobotoMono-MediumItalic.svg#RobotoMono-MediumItalic') format('svg');
+    font-weight: 500;
     font-style: italic;
 }

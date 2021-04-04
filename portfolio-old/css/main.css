@@ -1,0 +1,323 @@
+/*  Thanks for visiting my page.
+	If you have found any bugs
+   	in the code, please notify me
+    by email or GitHub. */
+
+html, body {height:100%} /* Sticky footer */
+
+body {
+	color:#aaa;
+	font-family:'Roboto', sans-serif;
+	margin:0;
+	min-width:780px;
+}
+
+/********* NAVIGATION *********/
+
+nav {
+	margin:0 auto;
+	text-align:center;
+	user-select:none;
+	width:1000px;
+}
+
+header, nav ul {display:inline-block}
+
+header img {
+	height:58px;
+	margin:45px 150px 0 0;
+	width:240px;
+}
+
+ul {
+	list-style:none;
+	margin:45px 0 0;
+	padding:0;
+}
+
+nav li {
+	float:left;
+	
+	-webkit-transition:background .8s;
+	   -moz-transition:background .8s;
+		 -o-transition:background .8s;
+			transition:background .8s;
+	/* Transition ending */
+}
+
+nav li:hover {
+	background:#F5F5F5;
+
+	-webkit-transition:background .2s;
+	   -moz-transition:background .2s;
+		 -o-transition:background .2s;
+			transition:background .2s;
+	/* Transition beginning */
+}
+
+nav a {
+	color:#aaa;
+	font-size:20px;
+	text-decoration:none;
+}
+
+.nav-li-elements {
+	border-left:1px solid #aaa;
+	display:block;
+	font-weight:100;
+	height:58px;
+	line-height:58px;
+	width:200px;
+}
+
+.dropdown {position:relative}
+
+.dropdown-content {
+	background:#f5f5f5;
+	box-shadow:0 5px 10px -5px rgba(0,0,0,.2);
+	height:0;
+	left:0;
+	margin:0;
+	opacity:0;
+	padding:0 19.5px;
+	position:absolute;
+	visibility:hidden;
+	width:161px;
+	
+	-webkit-transition:all .3s;
+	   -moz-transition:all .3s;
+		 -o-transition:all .3s;
+			transition:all .3s;
+}
+
+.dropdown:hover .dropdown-content {
+	visibility:visible;
+	opacity:1;
+	height:20px;
+	padding:10px 19.5px 18px;
+	
+	-webkit-transition:all .5s;
+	   -moz-transition:all .5s;
+		 -o-transition:all .5s;
+			transition:all .5s;
+}
+
+.dropdown-content a {vertical-align:middle}
+/* Little better links alignment */
+
+.dropdown li {height:20px;width:80px}
+/* Fixed size of the dropdown elements */
+
+.dropdown li:first-child {border-right:1px solid #aaa}
+/* Links separator in 'links' dropdown */
+
+.nav-elements>li:nth-child(3) {border-right:1px solid #aaa}
+/* Right border of the third element of the list */
+
+/********* TOOLTIP *********/
+
+.tooltip {position:relative}
+
+.tooltip-content {
+	background:#000;
+	border-radius:5px;
+	color:#eee;
+	font-family:'Roboto', sans-serif;
+	font-size:13px;
+	font-weight:400;
+	left:50%;
+	margin:0;
+	opacity:0;
+	padding:5px;
+	position:absolute;
+	top:35px;
+	transform:translate(-50%);
+	visibility:hidden;
+
+	-webkit-transition:all .2s;
+	   -moz-transition:all .2s;
+		 -o-transition:all .2s;
+			transition:all .2s;
+}
+
+.tooltip-content::before {
+	border-bottom:5px solid #000;
+	border-left:5px solid transparent;
+	border-right:5px solid transparent;
+	content:'';
+	display:block;
+	left:50%;
+	position:absolute;
+	top:-5px;
+	transform:translate(-50%);
+} /* Little tooltip's triangle */
+
+.tooltip:hover .tooltip-content {
+	opacity:.7;
+	top:30px;
+	visibility:visible;
+
+	-webkit-transition:all .5s;
+	   -moz-transition:all .5s;
+		 -o-transition:all .5s;
+			transition:all .5s;
+}
+
+/********* TEXT *********/
+
+article {
+	margin:100px auto 0;
+	min-height:100%; /* Makes footer sticky */
+	width:1000px;
+}
+
+.highlight {color:#7DD9FF}
+/* Little flag after 'Ukraine' word on hover */
+
+.text {display:inline-block;width:580px}
+
+.text h1 {
+	font-size:35px;
+	font-weight:400;
+	margin:0;
+}
+
+.text #flag::after {
+	background:#338af3;
+	border-bottom:10px solid #ffda44;
+	content:'';
+	height:10px;
+	margin:13px 5px 0;
+	opacity:0;
+	position:absolute;
+	user-select:none;
+	visibility:hidden;
+	width:4px;
+	
+	-webkit-transition:all .5s;
+	   -moz-transition:all .5s;
+		 -o-transition:all .5s;
+			transition:all .5s;
+}
+
+.text #flag:hover::after {opacity:1;visibility:visible}
+
+hr {border:1px solid #aaa;margin:30px 0 15px}
+
+.text p {
+	font-size:1.3em;
+	font-style:italic;
+	font-weight:300;
+	line-height:1.2em;
+	margin:0 0 .3em 0;
+	text-align:justify;
+}
+
+#image-section {
+	height: 325px;
+	overflow:hidden;
+	width:300px;
+	float:right;
+}
+
+#main-image {
+	height:300px;
+	width:300px;
+}
+
+/********* FOOTER *********/
+
+footer {
+	background:#eee;
+	height:140px;
+	margin-top:-140px;
+	position:absolute;
+	min-width:100%;
+}
+
+.footer-items {width:1000px;margin:0 auto}
+
+footer p {
+	display:inline-block;
+	line-height:20px;
+	margin:50px 0;
+	text-align:center;
+	width:575px; /* As the article section above */
+}
+
+.langs {
+	float:right;
+	height:70px;
+	margin:35px 90px;
+	width:110px;
+}
+
+.langs a {
+	color:#aaa;
+	display:block;
+	height:20px;
+	text-decoration:none;
+}
+
+.langs a:hover {color:#888}
+
+.langs a::before {
+	background:url('/images/langs.svg');
+	background-size:45px;
+	background-position:0; /* IE */
+	content:'';
+	display:inline-block;
+	height:15px;
+	position:relative;
+	top:2px;
+	width:15px;
+}
+
+#ua {padding:5px 0}
+#ua::before {background-position:30px}
+#ru::before {background-position:15px}
+
+/********* OTHER *********/
+
+*::selection {background:#eee}
+
+@media only screen and (max-width:1100px) {
+
+	nav, nav ul {width:605px}
+
+	.nav-li-elements {font-weight:400}
+
+	header img {
+		height: 100px;
+		margin: 45px 0 10px 0;
+		width: 605px;
+	}
+
+	article {
+		margin:50px auto 400px;
+		width:600px;
+	}
+
+	.text {width:600px;}	
+	.text h1 {width:635px}
+	.text p {font-size:1.8em}
+
+	#image-section {
+		margin:50px auto 140px;
+		text-align:center;
+		width:600px;
+		height: 375px;
+	}
+
+	#image-section::after {margin: 0 auto}
+
+	#main-image {
+		width: 350px;
+		height: 350px;
+	}
+
+	.footer-items {width:600px}
+
+	footer p {width:300px}
+
+}

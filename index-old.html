@@ -1,0 +1,84 @@
+<!-- TODO
+- IE8+, Chrome, Firefox, Opera compatibility
+- Responsiveness
+- Refactoring
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Barsukov</title>
+
+    <link rel="stylesheet" href="/css/reset.css">
+    <script src="https://kit.fontawesome.com/9c034f2fa7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/main-old.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <script src="/js/index.js"></script>
+</head>
+<body>
+    <nav class="nav clear">
+        <a class="nav__logo" href="/">M</a>
+        <p class="nav__about" href="#about">About Me</p>
+        <div class="nav__menu-dropdown">
+            <a href="#" id="menu" class="dropdown-btn" onclick="dropdown()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <ul class="menu-dropdown__content">
+                <li><a href="#">Contacts</a>
+                    <ul class="menu-dropdown__links">
+                        <li>
+                            <a href="https://github.com/Barsukov-m/" target="_blank" title="Github" class="fab fa-github"></a>
+                        </li><li>
+                            <a href="https://www.linkedin.com/in/barsukovm/" target="_blank" title="LinkedIn" class="fab fa-linkedin"></a>
+                        </li><li>
+                            <a href="https://www.flickr.com/people/barsukov/" target="_blank" title="Flickr" class="fab fa-flickr"></a>
+                        </li><li class="links__contact-btn">
+                            <button >
+                                <a href="mailto:barsukov.m23@gmail.com" class="text--white">Contact Me</a>
+                            </button>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#" target="_blank">Works</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="main">
+        <header class="header">
+            <h1>Hello! <img class="waving" src="/images/waving.png" alt="👋">
+                <span class="d-block">I'm Michael.</span>
+            </h1>
+        </header>
+        <section class="content">
+            <p class="content__info">I’m a 17-year-old student from Ukraine. Currently, I’m studying computer science at Kyiv Polytechnic Institute, and my professional goal is to become a specialist in front-end and software engineering.</p>
+            <p class="content__info">I’ve been learning front-end on my own since March 2019. As a result, I've already mastered such languages as HTML and CSS, had experience in JavaScript, Python, and C/C++.</p>
+            <p class="content__info">Besides, I love to play the guitar, shoot nature and cityscapes, read fiction and self-help books and maintain a healthy lifestyle.</p>
+        </section>
+    </main>
+    <aside class="side-profile">
+        <img src="/images/profile-4.png" alt="Here must've been a photo of me.">
+        <h2><span class="side-profile__name d-block">Michael</span>Barsukov</h2>
+        <div class="side-profile__info">
+            <p><b>occupation</b>: student</p>
+            <p><b>languages</b>: Ukrainian, English, Russian</p>
+            <p><b>skills</b>: HTML, CSS, JavaScript, Git, Python, C/C++</p>
+        </div>
+    </aside>
+    <footer class="side-footer clear">
+        <ul class="side-footer__langs">
+            <li><a href="#">uk</a></li><li>
+                <a href="/pages/index-ua.html">ua</a></li><li>
+                <a href="/pages/index-ru.html">ru</a></li>
+        </ul>
+    </footer>
+    <footer class="main-footer clear">
+        <p class="main-footer__copy">&copy; Michael Barsukov 2021</p>
+    </footer>
+    <div class="night-mode"></div>
+</body>
+</html>
