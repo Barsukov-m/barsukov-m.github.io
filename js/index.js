@@ -1,15 +1,22 @@
 function dropdown() {
-    document.getElementById("menu").classList.toggle("show-dropdown");
+    document.getElementById('menu').classList.toggle('show-dropdown');
 }
 
-window.onclick = function(event) {
-    if (!event.target.matches('.dropdown-btn')) {
-        var dropdowns = document.getElementsByClassName("menu-dropdown__content");
-        for (let i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show-dropdown')) {
-                openDropdown.classList.remove('show-dropdown');
-            }
-        }
+function lightsout() {
+    var styles = document.getElementById('stylesheet-dark');
+    var themeBtn = document.getElementById('theme-btn');
+
+    if (themeBtn.classList.contains('fa-moon')) {
+        themeBtn.classList.add('fa-sun');
+        themeBtn.classList.remove('fa-moon');
+    } else {
+        themeBtn.classList.add('fa-moon');
+        themeBtn.classList.remove('fa-sun');
+    }
+
+    if (styles.href.match(/\/css\/dark.css/)) {
+        styles.href = '#';
+    } else {
+        styles.href = '/css/dark.css';
     }
 }

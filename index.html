@@ -1,7 +1,8 @@
 <!-- TODO
     - Old browsers compatibility
+    - Translate
     - Refactoring
-    - 
+    - My works' page
 -->
 
 <!DOCTYPE html>
@@ -15,8 +16,9 @@
     <link rel="stylesheet" href="/css/reset.css">
     <script src="https://kit.fontawesome.com/9c034f2fa7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="#" id="stylesheet-dark">
     <link rel="stylesheet" href="/css/fonts.css">
-    <script src="/js/index.js"></script>
+    <script src="/js/index.js" async></script>
 </head>
 <body>
     <nav class="nav p-30 m-auto">
@@ -30,16 +32,19 @@
             </a>
             <ul class="menu-dropdown__content w-100 center bg-grey">
                 <li>
-                    <a href="#">Contacts</a>
+                    <button id="theme-btn" class="fas fa-moon" onclick="lightsout()"></button>
+                </li>
+                <li>
+                    <p>Contacts</p>
                 </li>
                 <li>
                     <ul class="menu-dropdown__links">
                         <li>
-                            <a href="https://github.com/Barsukov-m/" target="_blank" title="Github" class="fab fa-github"></a>
+                            <a href="https://github.com/Barsukov-m/" target="_blank" title="Github" class="social-links fab fa-github"></a>
                         </li><li>
-                            <a href="https://www.linkedin.com/in/barsukovm/" target="_blank" title="LinkedIn" class="fab fa-linkedin"></a>
+                            <a href="https://www.linkedin.com/in/barsukovm/" target="_blank" title="LinkedIn" class="social-links fab fa-linkedin"></a>
                         </li><li>
-                            <a href="https://www.flickr.com/people/barsukov/" target="_blank" title="Flickr" class="fab fa-flickr"></a>
+                            <a href="https://www.flickr.com/people/barsukov/" target="_blank" title="Flickr" class="social-links fab fa-flickr"></a>
                         </li>
                     </ul>
                 </li><li>
@@ -48,9 +53,9 @@
                     </button>
                 </li>
                 </li>
-                <li>
-                    <a href="#" target="_blank">Works</a>
-                </li>
+                <!-- <li>
+                    <a href="/pages/works.html">Works</a>
+                </li> -->
             </ul>
         </div>
     </nav>
@@ -82,11 +87,10 @@
     <footer class="footer d-block clear w-100 m-auto center bg-grey">
         <ul class="footer__langs bg-grey">
             <li><a href="/">uk</a></li>
-            <li><a href="#WIP">ua</a></li>
-            <li><a href="#WIP">ru</a></li>
+            <li><a href="/pages/index-ua.html">ua</a></li>
+            <li><a href="/pages/index-ru.html">ru</a></li>
         </ul>
         <p class="footer__copy">&copy; Michael Barsukov 2021</p>
     </footer>
-    <div class="night-mode"></div>
 </body>
 </html>

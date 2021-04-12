@@ -45,3 +45,50 @@
     font-weight: 500;
     font-style: italic;
 }
+
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('/fonts/RobotoMono-SemiBold.eot');
+    src: url('/fonts/RobotoMono-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/RobotoMono-SemiBold.woff2') format('woff2'),
+        url('/fonts/RobotoMono-SemiBold.woff') format('woff'),
+        url('/fonts/RobotoMono-SemiBold.ttf') format('truetype'),
+        url('/fonts/RobotoMono-SemiBold.svg#RobotoMono-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('/fonts/RobotoMono-SemiBoldItalic.eot');
+    src: url('/fonts/RobotoMono-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/RobotoMono-SemiBoldItalic.woff2') format('woff2'),
+        url('/fonts/RobotoMono-SemiBoldItalic.woff') format('woff'),
+        url('/fonts/RobotoMono-SemiBoldItalic.ttf') format('truetype'),
+        url('/fonts/RobotoMono-SemiBoldItalic.svg#RobotoMono-SemiBoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('/fonts/RobotoMono-Bold.eot');
+    src: url('/fonts/RobotoMono-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/RobotoMono-Bold.woff2') format('woff2'),
+        url('/fonts/RobotoMono-Bold.woff') format('woff'),
+        url('/fonts/RobotoMono-Bold.ttf') format('truetype'),
+        url('/fonts/RobotoMono-Bold.svg#RobotoMono-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('/fonts/RobotoMono-BoldItalic.eot');
+    src: url('/fonts/RobotoMono-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/RobotoMono-BoldItalic.woff2') format('woff2'),
+        url('/fonts/RobotoMono-BoldItalic.woff') format('woff'),
+        url('/fonts/RobotoMono-BoldItalic.ttf') format('truetype'),
+        url('/fonts/RobotoMono-BoldItalic.svg#RobotoMono-BoldItalic') format('svg');
+    font-weight: 700;
+    font-style: italic;
+}
