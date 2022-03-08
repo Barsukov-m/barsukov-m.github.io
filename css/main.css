@@ -171,7 +171,7 @@ body {
 
 .footer-langs {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding: 30px 0;
 }
 
@@ -192,10 +192,6 @@ body {
 
 .footer-langs li:nth-child(2) a:before {
   background-position-x: 60px;
-}
-
-.footer-langs li:nth-child(3) a:before {
-  background-position-x: 30px;
 }
 
 .footer-copy {
