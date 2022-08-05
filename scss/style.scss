@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&family=Playfair+Display:ital,wght@0,800;1,800&display=swap');
+
+$body-color:    #666666;
+$heading-color: #222222;
+
+$nav-height:    96px;
+
+$font-weights: (
+	"regular": 400,
+	"medium": 500,
+	"bold": 700,
+	"extraBold": 800
+);
+
+
+@function fw($weight) {
+	@return map-get($font-weights, $weight);
+}
+
+
+@mixin breakpoint($point) {
+	@if $point == sm {
+		@media only screen and (min-width: 576px) {
+			@content;
+		}
+	}
+	@else if $point == md {
+		@media only screen and (min-width: 768px) {
+			@content;
+		}
+	}
+	@else if $point == lg {
+		@media only screen and (min-width: 992px) {
+			@content;
+		}
+	}
+	@else if $point == xl {
+		@media only screen and (min-width: 1200px) {
+			@content;
+		}
+	}
+	@else if $point == xxl {
+		@media only screen and (min-width: 1400px) {
+			@content;
+		}
+	}
+}
+
+
+html, body {
+	font-family: 'Nunito';
+	font-size: 16px;
+
+	a, p, li {
+		color: $body-color;
+		text-decoration: none;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $heading-color;
+	font-family: 'Playfair Display' !important;
+	font-weight: fw(extraBold) !important;
+}
+
+
+/* ========= NAVIGATION ======== */
+
+.navigation {
+	line-height: $nav-height;
+
+	&.navbar.navbar-light .nav-link {
+		color: $body-color;
+		padding: 0;
+		position: relative;
+
+		&--underline {
+			&:after {
+				background: $body-color;
+				bottom: 25%;
+				content: '';
+				display: block;
+				height: 2.5px;
+				left: 0;
+				position: absolute;
+				width: 0;
+
+				-webkit-transition: width .1s ease-in;
+					 -moz-transition: width .1s ease-in;
+						 -o-transition: width .1s ease-in;
+								transition: width .1s ease-in;
+			}
+
+			&:hover {
+				color: $heading-color;
+
+				&:after {
+					width: 100%;
+				}
+			}
+		}
+
+		&:hover, &:focus {
+			color: $heading-color;
+		}
+	}
+
+	img {
+		height: 30px;
+	}
+}
+
+
+/* FA icons */
+.fa-brands, .fa-solid {
+	color: #333;
+	font-size: 30px;
+}
+
+
+/* =========== CONTENT ============ */
+
+.main {
+	font-size: 1.2rem;
+
+	&__h2 {
+		font-size: 2.5rem;
+		text-align: center;
+	}
+
+	&__profile {
+		align-items: center;
+		min-height: calc(100vh - $nav-height - 3rem);
+
+		&-img {
+			text-align: center;
+
+			@include breakpoint(lg) {
+				text-align: initial;
+			}
+		}
+
+		@include breakpoint(lg) {
+			padding-bottom: $nav-height;
+		}
+	}
+
+	&__header {
+		font-size: 3.5rem;
+
+		@include breakpoint(lg) {
+			font-size: 4rem;
+		}
+	}
+
+	&__greeting {
+		display: block;
+
+		img {
+			height: 50px;
+			vertical-align: baseline;
+
+			&:hover {
+				animation: 0.3s ease-in-out 2 waving;
+			}
+		}
+	}
+
+	&__projects-container {
+		display: flex;
+		flex-wrap: wrap;
+
+		a {
+			display: block;
+			width: 100%;
+
+			@include breakpoint(md) {
+				width: 50%;
+			}
+
+			@include breakpoint(xxl) {
+				width: calc(100% / 3);
+			}
+
+			h3 {
+				background: #222d;
+				color: #FFF;
+				font-size: 3rem;
+				line-height: 400px;
+				margin: 0;
+				opacity: 0;
+
+				-webkit-transition: opacity .2s ease-in;
+					 -moz-transition: opacity .2s ease-in;
+						 -o-transition: opacity .2s ease-in;
+								transition: opacity .2s ease-in;
+
+				@include breakpoint(md) {
+					line-height: 300px;
+				}
+
+				@include breakpoint(lg) {
+					line-height: 400px;
+				}
+
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	#yelpCamp {
+		background: center/cover no-repeat url('/img/projects/yelpCamp.jpg');
+	}
+}
+
+
+/* ========== ANIMATION =========== */
+
+@keyframes waving {
+	0%, 100% {
+		-webkit-transform: none;
+			 -moz-transform: none;
+				 -o-transform: none;
+						transform: none;
+	}
+
+	50% {
+		-webkit-transform: translate(5px, -5px) rotate(20deg);
+			 -moz-transform: translate(5px, -5px) rotate(20deg);
+				 -o-transform: translate(5px, -5px) rotate(20deg);
+						transform: translate(5px, -5px) rotate(20deg);
+	}
+}
