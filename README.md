@@ -1,3 +1,4 @@
 # barsukov-m.github.io
-My portfolio repository.
-Feel free to add issues and pull requests.
+This is my portfolio repository.
+
+Feel free to add pull requests.
