@@ -1,0 +1,23 @@
+{
+  "name": "barsukov-m.github.io",
+  "version": "1.0.0",
+  "description": "My portfolio repository. Feel free to add issues and pull requests.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Barsukov-m/barsukov-m.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Barsukov-m/barsukov-m.github.io/issues"
+  },
+  "homepage": "https://github.com/Barsukov-m/barsukov-m.github.io#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
