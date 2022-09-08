@@ -1,68 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&family=Playfair+Display:ital,wght@0,800;1,800&display=swap');
+@import './mixins';
 
-$body-color:    #666666;
+$body-color: #666666;
 $heading-color: #222222;
 
-$nav-height:    96px;
+$nav-height: 96px;
 
 $font-weights: (
-	"regular": 400,
-	"medium": 500,
-	"bold": 700,
-	"extraBold": 800
+	'regular': 400,
+	'medium': 500,
+	'bold': 700,
+	'extraBold': 800,
 );
-
 
 @function fw($weight) {
 	@return map-get($font-weights, $weight);
 }
 
-
-@mixin breakpoint($point) {
-	@if $point == sm {
-		@media only screen and (min-width: 576px) {
-			@content;
-		}
-	}
-	@else if $point == md {
-		@media only screen and (min-width: 768px) {
-			@content;
-		}
-	}
-	@else if $point == lg {
-		@media only screen and (min-width: 992px) {
-			@content;
-		}
-	}
-	@else if $point == xl {
-		@media only screen and (min-width: 1200px) {
-			@content;
-		}
-	}
-	@else if $point == xxl {
-		@media only screen and (min-width: 1400px) {
-			@content;
-		}
-	}
-}
-
-
-html, body {
+html,
+body {
 	font-family: 'Nunito';
 	font-size: 16px;
 
-	a, p, li {
+	a,
+	p,
+	li {
 		color: $body-color;
 		text-decoration: none;
 	}
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	color: $heading-color;
 	font-family: 'Playfair Display' !important;
 	font-weight: fw(extraBold) !important;
 }
-
 
 /* ========= NAVIGATION ======== */
 
@@ -85,10 +62,10 @@ h1, h2, h3, h4, h5, h6 {
 				position: absolute;
 				width: 0;
 
-				-webkit-transition: width .1s ease-in;
-					 -moz-transition: width .1s ease-in;
-						 -o-transition: width .1s ease-in;
-								transition: width .1s ease-in;
+				-webkit-transition: width 0.1s ease-in;
+				-moz-transition: width 0.1s ease-in;
+				-o-transition: width 0.1s ease-in;
+				transition: width 0.1s ease-in;
 			}
 
 			&:hover {
@@ -100,7 +77,8 @@ h1, h2, h3, h4, h5, h6 {
 			}
 		}
 
-		&:hover, &:focus {
+		&:hover,
+		&:focus {
 			color: $heading-color;
 		}
 	}
@@ -110,13 +88,12 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
-
 /* FA icons */
-.fa-brands, .fa-solid {
+.fa-brands,
+.fa-solid {
 	color: #333;
 	font-size: 30px;
 }
-
 
 /* =========== CONTENT ============ */
 
@@ -173,34 +150,57 @@ h1, h2, h3, h4, h5, h6 {
 		a {
 			display: block;
 			width: 100%;
+			max-width: 516px;
+			height: 516px;
 
 			@include breakpoint(md) {
-				width: 50%;
+				max-width: 696px;
+				height: 696px;
+			}
+
+			@include breakpoint(lg) {
+				max-width: 468px;
+				height: 468px;
+			}
+
+			@include breakpoint(xl) {
+				max-width: calc(926px / 3);
+				height: calc(926px / 3);
 			}
 
 			@include breakpoint(xxl) {
-				width: calc(100% / 3);
+				max-width: calc(1076px / 3);
+				height: calc(1076px / 3);
 			}
 
 			h3 {
 				background: #222d;
-				color: #FFF;
+				color: #fff;
 				font-size: 3rem;
-				line-height: 400px;
+				line-height: 516px;
 				margin: 0;
 				opacity: 0;
 
-				-webkit-transition: opacity .2s ease-in;
-					 -moz-transition: opacity .2s ease-in;
-						 -o-transition: opacity .2s ease-in;
-								transition: opacity .2s ease-in;
+				-webkit-transition: opacity 0.2s ease-in;
+				-moz-transition: opacity 0.2s ease-in;
+				-o-transition: opacity 0.2s ease-in;
+				transition: opacity 0.2s ease-in;
 
 				@include breakpoint(md) {
-					line-height: 300px;
+					line-height: 696px;
 				}
 
 				@include breakpoint(lg) {
-					line-height: 400px;
+					line-height: 468px;
+				}
+
+				@include breakpoint(xl) {
+					line-height: calc(926px / 3);
+					font-size: 2rem;
+				}
+
+				@include breakpoint(xxl) {
+					line-height: calc(1076px / 3);
 				}
 
 				&:hover {
@@ -213,23 +213,27 @@ h1, h2, h3, h4, h5, h6 {
 	#yelpCamp {
 		background: center/cover no-repeat url('/img/projects/yelpCamp.jpg');
 	}
-}
 
+	#studioDesign {
+		background: center/cover no-repeat url('/img/projects/studioDesign.png');
+	}
+}
 
 /* ========== ANIMATION =========== */
 
 @keyframes waving {
-	0%, 100% {
+	0%,
+	100% {
 		-webkit-transform: none;
-			 -moz-transform: none;
-				 -o-transform: none;
-						transform: none;
+		-moz-transform: none;
+		-o-transform: none;
+		transform: none;
 	}
 
 	50% {
 		-webkit-transform: translate(5px, -5px) rotate(20deg);
-			 -moz-transform: translate(5px, -5px) rotate(20deg);
-				 -o-transform: translate(5px, -5px) rotate(20deg);
-						transform: translate(5px, -5px) rotate(20deg);
+		-moz-transform: translate(5px, -5px) rotate(20deg);
+		-o-transform: translate(5px, -5px) rotate(20deg);
+		transform: translate(5px, -5px) rotate(20deg);
 	}
 }

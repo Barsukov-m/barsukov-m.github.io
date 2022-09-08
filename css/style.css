@@ -1,14 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&family=Playfair+Display:ital,wght@0,800;1,800&display=swap");
-html, body {
+html,
+body {
   font-family: "Nunito";
   font-size: 16px;
 }
-html a, html p, html li, body a, body p, body li {
+html a,
+html p,
+html li,
+body a,
+body p,
+body li {
   color: #666666;
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #222222;
   font-family: "Playfair Display" !important;
   font-weight: 800 !important;
@@ -51,7 +62,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* FA icons */
-.fa-brands, .fa-solid {
+.fa-brands,
+.fa-solid {
   color: #333;
   font-size: 30px;
 }
@@ -106,22 +118,38 @@ h1, h2, h3, h4, h5, h6 {
 .main__projects-container a {
   display: block;
   width: 100%;
+  max-width: 516px;
+  height: 516px;
 }
 @media only screen and (min-width: 768px) {
   .main__projects-container a {
-    width: 50%;
+    max-width: 696px;
+    height: 696px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .main__projects-container a {
+    max-width: 468px;
+    height: 468px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .main__projects-container a {
+    max-width: 308.6666666667px;
+    height: 308.6666666667px;
   }
 }
 @media only screen and (min-width: 1400px) {
   .main__projects-container a {
-    width: 33.3333333333%;
+    max-width: 358.6666666667px;
+    height: 358.6666666667px;
   }
 }
 .main__projects-container a h3 {
   background: rgba(34, 34, 34, 0.8666666667);
-  color: #FFF;
+  color: #fff;
   font-size: 3rem;
-  line-height: 400px;
+  line-height: 516px;
   margin: 0;
   opacity: 0;
   -webkit-transition: opacity 0.2s ease-in;
@@ -131,12 +159,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media only screen and (min-width: 768px) {
   .main__projects-container a h3 {
-    line-height: 300px;
+    line-height: 696px;
   }
 }
 @media only screen and (min-width: 992px) {
   .main__projects-container a h3 {
-    line-height: 400px;
+    line-height: 468px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .main__projects-container a h3 {
+    line-height: 308.6666666667px;
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .main__projects-container a h3 {
+    line-height: 358.6666666667px;
   }
 }
 .main__projects-container a h3:hover {
@@ -144,6 +183,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .main #yelpCamp {
   background: center/cover no-repeat url("/img/projects/yelpCamp.jpg");
+}
+.main #studioDesign {
+  background: center/cover no-repeat url("/img/projects/studioDesign.png");
 }
 
 /* ========== ANIMATION =========== */
